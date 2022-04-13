@@ -11,7 +11,6 @@ if (isset($data['message'])) {
         http_response_code(500);
         $response['error'] = true;
     }
-    exit($data['message']);
 } else {
     http_response_code(400);
     $response['error'] = true;
