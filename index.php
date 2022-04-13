@@ -175,11 +175,11 @@ require_once(__DIR__ . "/controllers/index.php");
             <div class="row">
                 <div class="col-md-6 col-sm-12 mt-3">
                     <div class="alert alert-danger alert-dismissible fade d-none" role="alert" id="emailAlertError">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <strong>Upss...</strong> Lo sentimos, algo ha salido mal, vuelve a intentarlo más tarde.
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                     <div class="alert alert-success alert-dismissible fade d-none" role="alert" id="emailAlertOk">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <strong>¡Mensaje enviado!</strong>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                     <form id="sendEmail">
