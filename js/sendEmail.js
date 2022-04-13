@@ -1,11 +1,11 @@
 const form = document.getElementById('sendEmail')
 
 const showAlert = (alert) => {
-    alert.removeAttribute('d-none')
-    alert.setAttribute('show')
+    alert.classList.remove('d-none')
+    alert.classList.add('show')
     setTimeout(() => {
-        alert.removeAttribute('show')
-        alert.setAttribute('d-none')
+        alert.classList.remove('show')
+        alert.classList.add('d-none')
     }, 5000)
 }
 
