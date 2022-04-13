@@ -1,0 +1,218 @@
+:root {
+    --fer-color-1: #daa89f;
+    --fer-color2: #a8af9c;
+    --fer-dark-1: #6f5f5a;
+    --fer-dark-2: #ac8c82;
+    --fer-dark-3: #868a89;
+    --fer-light-1: #f8f4eb;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Amatic';
+    src: url('../fonts/AmaticSC-Bold.ttf');
+}
+
+p,
+label,
+button,
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Quicksand';
+}
+
+h3 {
+    color: var(--fer-dark-1);
+}
+
+h2 {
+    color: var(--fer-dark-1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.fer-main-header {
+    background: url(../img/main-background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headers h1,
+.headers h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.headers h1 {
+    font-family: 'Amatic';
+    font-size: 4rem;
+    color: var(--fer-dark-1);
+}
+
+.headers h2 {
+    font-family: 'Quicksand';
+    font-weight: 300;
+    color: var(--fer-dark-2);
+}
+
+.header-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-outline-primary {
+    color: var(--fer-dark-1);
+    border-color: var(--fer-dark-1);
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: var(--fer-color-1);
+    border-color: var(--fer-color-1);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.coundown-section {
+    background-color: var(--fer-dark-2);
+}
+
+.coundown-section i {
+    color: white;
+    font-size: 3rem;
+}
+
+.coundown-section .count-numb {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.coundown-section p {
+    color: white;
+}
+
+.count-content {
+    display: inline-block;
+    text-align: center;
+}
+
+.count-content img {
+    height: 4rem;
+    width: auto;
+}
+
+.whatsapp-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 1px 1px 7px #7c7c7c;
+    background-color: #25d366;
+    z-index: 1021;
+}
+
+.whatsapp-button img {
+    height: 2.5rem;
+    filter: invert(1);
+}
+
+.g-map iframe {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--fer-dark-1);
+    color: white;
+}
+
+.default-subheader {
+    color: var(--fer-dark-2);
+    font-size: 1rem;
+}
+
+#contacto {
+    background-color: var(--fer-dark-2);
+}
+
+#contacto *:not(input[type=text],
+input[type=email],
+textarea,
+.alert,
+.alert strong) {
+    color: white;
+}
+
+#contacto .btn-outline-primary {
+    border-color: white;
+}
+
+.card-header {
+    background-color: var(--fer-dark-2);
+}
+
+.bg-light {
+    background-color: var(--fer-dark-1);
+}
+
+.nav-link {
+    color: var(--fer-light-1) !important;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-toggler {
+    color: var(--fer-light-1) !important;
+    border-color: var(--fer-light-1) !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+hr {
+    width: 10rem;
+    margin: 1rem auto;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+small {
+    color: var(--fer-dark-1);
+}
+
+.form-control:focus {
+    border-color: var(--fer-light-1);
+    box-shadow: 0 0 0 0.25rem rgb(248 244 235 / 25%);
+}
