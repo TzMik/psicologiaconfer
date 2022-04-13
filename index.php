@@ -16,7 +16,7 @@ require_once(__DIR__ . "/controllers/index.php");
     <!-- CUTOM -->
     <link rel="stylesheet" href="css/style.css">
     <!-- MAILING -->
-    <script src="js/sendEmail.js" defer></script>
+    <script src="js/sendEmail.js?v=1.0.0" defer></script>
     <!-- JS CONFIG -->
     <link rel="preload" href="config/specialRoutes.js?v=1.0.0" as="script">
     <script src="config/specialRoutes.js?v=1.0.0"></script>
