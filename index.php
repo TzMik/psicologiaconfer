@@ -18,8 +18,8 @@ require_once(__DIR__ . "/controllers/index.php");
     <!-- MAILING -->
     <script src="js/sendEmail.js" defer></script>
     <!-- JS CONFIG -->
-    <link rel="preload" href="config/specialRoutes.js" as="script">
-    <script src="config/specialRoutes.js"></script>
+    <link rel="preload" href="config/specialRoutes.js?v=1.0.0" as="script">
+    <script src="config/specialRoutes.js?v=1.0.0"></script>
 </head>
 
 <body>
