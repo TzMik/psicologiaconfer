@@ -1,0 +1,7 @@
+# Allow all
+User-agent: *
+Allow: /
+
+# block SemrushBot
+User-agent: SemrushBot
+Disallow: /
