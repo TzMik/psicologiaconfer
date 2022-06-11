@@ -24,7 +24,8 @@ button,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: 'Quicksand';
 }
 
@@ -34,6 +35,11 @@ h3 {
 
 h2 {
     color: var(--fer-dark-1);
+}
+
+h5 {
+    color: var(--fer-dark-1);
+    font-weight: bold;
 }
 
 img {
@@ -215,4 +221,26 @@ small {
 .form-control:focus {
     border-color: var(--fer-light-1);
     box-shadow: 0 0 0 0.25rem rgb(248 244 235 / 25%);
+}
+
+.book-btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.book-card img {
+    width: 100% !important;
+}
+
+.pagination a{
+    color: var(--bs-body-color);
+}
+
+.page-item.active .page-link {
+    background-color: var(--fer-color-1);
+    border-color: var(--fer-dark-1);
+}
+
+.page-link:hover {
+    color: var(--bs-body-color);
 }

@@ -6,38 +6,9 @@ require_once(__DIR__ . "/controllers/index.php");
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psicología con Fer</title>
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="libraries/bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <script src="libraries/bootstrap-5.1.3-dist/js/bootstrap.min.js" defer></script>
-    <!-- CUTOM -->
-    <link rel="stylesheet" href="css/style.css">
+    <?php require_once __DIR__ . "/views/components/head.php"; ?>
     <!-- MAILING -->
     <script src="js/sendEmail.js?v=1.0.0" defer></script>
-    <!-- JS CONFIG -->
-    <link rel="preload" href="config/specialRoutes.js?v=1.0.0" as="script">
-    <script src="config/specialRoutes.js?v=1.0.0"></script>
-    <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -50,37 +21,7 @@ require_once(__DIR__ . "/controllers/index.php");
             </div>
         </div>
     </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
-                <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-center">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?= ROOT_PATH ?>/#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?= ROOT_PATH ?>/#sobre-mi">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?= ROOT_PATH ?>/#psicoterapia">Psicoterapia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?= ROOT_PATH ?>/#contacto">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?= ROOT_PATH ?>/#opiniones">Opiniones</a>
-                    </li>
-                </ul>
-                <!-- <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
-            </div>
-        </div>
-    </nav>
+    <?php require_once __DIR__ . "/views/components/topbar.php"; ?>
     <section class="container">
         <div id="sobre-mi">
             <div class="row d-flex align-items-center mt-3">
@@ -238,14 +179,7 @@ require_once(__DIR__ . "/controllers/index.php");
             </button>
         </div>
     </section>
-    <footer class="container-fluid p-4">
-        <p>Av. Topacio 2331, CP: 44540<br>Guadalajara, Jalisco, México</p>
-    </footer>
-
-    <!-- whatssap float button -->
-    <a href="https://wa.me/3328505614" target="_blank" class="whatsapp-button d-flex align-items-center">
-        <img src="<?= ROOT_PATH ?>/img/svg/whatsapp-brands.svg" alt="">
-    </a>
+    <?php require_once __DIR__ . "/views/components/footer.php"; ?>
 </body>
 
 </html>
