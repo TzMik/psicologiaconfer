@@ -8,7 +8,7 @@ require_once __DIR__ . "/../controllers/libros.php";
 
 <head>
     <?php require_once __DIR__ . "/../views/components/head.php"; ?>
-    <script src="<?= ROOT_PATH ?>/js/books.js" defer></script>
+    <script src="<?= ROOT_PATH ?>/js/books.js?v=1.0.1" defer></script>
 </head>
 
 <body>
