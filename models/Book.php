@@ -48,6 +48,15 @@ class Book
         return $db->resultSet();
     }
 
+    public static function search($query, $listSize = 12)
+    {
+        $db = new Database;
+        $db->query("SELECT * FROM books WHERE title LIKE :title LIMIT :listSize");
+        $db->bind(":title", "%" . $query . "%");
+        $db->bind(":listSize", $listSize);
+        return $db->resultSet();
+    }
+
     public static function get($id) {
         $db = new Database;
         $db->query("SELECT * FROM books WHERE id = :id");

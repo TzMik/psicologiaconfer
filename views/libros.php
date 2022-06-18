@@ -17,10 +17,18 @@ require_once __DIR__ . "/../controllers/libros.php";
         <h1 class="text-center">Libros</h1>
         <h4 class="text-center default-subheader">Estos son los libros que recomiendo</h4>
         <hr>
+        <div class="row">
+            <div class="col-md-4 offset-md-8 col-sm-12">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Buscar:</span>
+                    <input type="search" class="form-control" name="searchBook" id="searchBook">
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="listSize" name="listSize" value="<?= BOOKS_PER_PAGE ?>">
+        <input type="hidden" id="page" name="page" value="1">
         <?php if (!empty($bookList)) : ?>
             <div class="row my-3" id="bookList">
-                <input type="hidden" id="listSize" name="listSize" value="<?= BOOKS_PER_PAGE ?>">
-                <input type="hidden" id="page" name="page" value="1">
                 <?php foreach ($bookList as $book) : ?>
                     <div class="col-md-3 col-sm-12 my-2">
                         <div class="card book-card">
@@ -29,7 +37,7 @@ require_once __DIR__ . "/../controllers/libros.php";
                                 <h5 class="card-title"><?= $book->title ?></h5>
                                 <p class="card-text"><?= TextUtil::getFirstWords($book->description) ?></p>
                                 <div class="book-btn-div">
-                                    <a href="<?= ROOT_PATH ?>/libro/<?= UrlGenerator::createUrlCanonical($book->title)?>-<?=$book->id?>" class="btn btn-outline-primary">Ver libro</a>
+                                    <a href="<?= ROOT_PATH ?>/libro/<?= UrlGenerator::createUrlCanonical($book->title) ?>-<?= $book->id ?>" class="btn btn-outline-primary">Ver libro</a>
                                 </div>
                             </div>
                         </div>
