@@ -9,6 +9,15 @@ const getFirstWords = (text, numberOfWords = 10) => {
     return result;
 }
 
+const getCanonical = (string) => {
+    string = string.trim();
+    string = string.toLowerCase();
+    string = string.replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ú', 'u').replace('ñ', 'n');
+    string = string.replace(/[^(\w\s)]*/, '');
+    string = string.replace(/\s/g, '-');
+    return string;
+}
+
 const getBooksHTML = (data) => {
     let html = "";
     data.forEach(element => {
@@ -20,7 +29,7 @@ const getBooksHTML = (data) => {
                     <h5 class="card-title">${element.title}</h5>
                     <p class="card-text">${getFirstWords(element.description)}</p>
                     <div class="book-btn-div">
-                        <a href="#" class="btn btn-outline-primary">Ver libro</a>
+                        <a href="${root_path + '/' + getCanonical(element.title)}-${element.id}" class="btn btn-outline-primary">Ver libro</a>
                     </div>
                 </div>
             </div>
