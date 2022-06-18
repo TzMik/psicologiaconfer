@@ -26,7 +26,7 @@ const loadMore = () => {
                     html += `
                     <div class="col-md-3 col-sm-12 my-2">
                         <div class="card book-card">
-                            <img src="https://kravmaganewcastle.com.au/wp-content/uploads/2017/04/default-image-620x600.jpg" class="card-img-top" alt="...">
+                            <img src="${element.image}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">${element.title}</h5>
                                 <p class="card-text">${getFirstWords(element.description)}</p>
