@@ -22,7 +22,7 @@
                     <a class="nav-link" aria-current="page" href="<?= ROOT_PATH ?>/#opiniones">Opiniones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="<?= ROOT_PATH ?>/libros">Libros</a>
+                    <a class="nav-link" aria-current="page" href="<?= ROOT_PATH ?>/libros">Libros recomendados</a>
                 </li>
             </ul>
             <!-- <form class="d-flex">

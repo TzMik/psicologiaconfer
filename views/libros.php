@@ -14,7 +14,7 @@ require_once __DIR__ . "/../controllers/libros.php";
 <body>
     <?php require_once __DIR__ . "/../views/components/topbar.php"; ?>
     <section class="container my-3">
-        <h1 class="text-center">Libros</h1>
+        <h1 class="text-center">Libros recomendados</h1>
         <h4 class="text-center default-subheader">Estos son los libros que recomiendo</h4>
         <hr>
         <div class="row">
