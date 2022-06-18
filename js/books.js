@@ -29,7 +29,7 @@ const getBooksHTML = (data) => {
                     <h5 class="card-title">${element.title}</h5>
                     <p class="card-text">${getFirstWords(element.description)}</p>
                     <div class="book-btn-div">
-                        <a href="${root_path + '/' + getCanonical(element.title)}-${element.id}" class="btn btn-outline-primary">Ver libro</a>
+                        <a href="${root_path + '/libro/' + getCanonical(element.title)}-${element.id}" class="btn btn-outline-primary">Ver libro</a>
                     </div>
                 </div>
             </div>
