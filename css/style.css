@@ -244,3 +244,29 @@ small {
 .page-link:hover {
     color: var(--bs-body-color);
 }
+
+.btn-primary {
+    background-color: var(--fer-color-1);
+    border-color: var(--fer-color-1);
+}
+
+.btn-primary:hover {
+    background-color: var(--fer-dark-2);
+    border-color: var(--fer-dark-2);
+}
+
+.btn-primary:focus {
+    background-color: var(--fer-dark-2);
+    border-color: var(--fer-color-1);
+}
+
+.btn-primary:disabled {
+    background-color: var(--fer-color2);
+    border-color: var(--fer-color2);
+}
+
+.book-descri img{
+    width: 15rem;
+    margin: 1rem;
+    float: left;
+}

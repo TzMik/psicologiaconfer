@@ -4,4 +4,5 @@ RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
  
-RewriteRule ^libros(/)?(\d+)*$ ./views/libros.php?id=$1
+RewriteRule ^libros[\/]?([a-zA-Z0-9_-]*)$ ./views/libros.php?request=$1
+RewriteRule ^libro[\/]?([a-zA-Z0-9_-]*)$ ./views/libro.php?request=$1

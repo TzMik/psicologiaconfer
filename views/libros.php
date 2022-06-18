@@ -18,18 +18,18 @@ require_once __DIR__ . "/../controllers/libros.php";
         <h4 class="text-center default-subheader">Estos son los libros que recomiendo</h4>
         <hr>
         <?php if (!empty($bookList)) : ?>
-            <div class="row my-3" id="book-list">
+            <div class="row my-3" id="bookList">
                 <input type="hidden" id="listSize" name="listSize" value="<?= BOOKS_PER_PAGE ?>">
                 <input type="hidden" id="page" name="page" value="1">
                 <?php foreach ($bookList as $book) : ?>
-                    <div class="col-md-3 col-sm-12">
+                    <div class="col-md-3 col-sm-12 my-2">
                         <div class="card book-card">
                             <img src="https://kravmaganewcastle.com.au/wp-content/uploads/2017/04/default-image-620x600.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title"><?= $book->title ?></h5>
                                 <p class="card-text"><?= TextUtil::getFirstWords($book->description) ?></p>
                                 <div class="book-btn-div">
-                                    <a href="#" class="btn btn-outline-primary">Ver libro</a>
+                                    <a href="<?= ROOT_PATH ?>/libro/<?= UrlGenerator::createUrlCanonical($book->title)?>-<?=$book->id?>" class="btn btn-outline-primary">Ver libro</a>
                                 </div>
                             </div>
                         </div>

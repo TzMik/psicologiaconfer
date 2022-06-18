@@ -9,27 +9,34 @@ class Book
     private $description;
     private $category;
     private $linkToBuy;
+    private $image;
     private $db;
 
-    public function __construct($id, $title, $author, $description, $category, $linkToBuy) {
+    public function __construct($id, $title, $author, $description, $category, $linkToBuy, $image) {
         $this->id = $id;
         $this->title = $title;
         $this->author = $author;
         $this->description = $description;
         $this->category = $category;
         $this->linkToBuy = $linkToBuy;
+        $this->image = $image;
         $this->db = new Database;
     }
 
     public function save()
     {
-        $this->db->query("UPDATE books SET title = :title, author = :author, description = :description, category = :category, linkToBuy = :linkToBuy WHERE id = :id");
+        $this->db->query("UPDATE books SET title = :title, author = :author, description = :description, category = :category, linkToBuy = :linkToBuy, image = :image WHERE id = :id");
         $this->db->bind(":title", $this->title);
         $this->db->bind(":author", $this->author);
         $this->db->bind(":description", $this->description);
         $this->db->bind(":category", $this->category);
         $this->db->bind(":linkToBuy", $this->linkToBuy);
+        $this->db->bind(":image", $this->image);
         $this->db->bind(":id", $this->id);
+    }
+
+    public function getAttribute($field) {
+        return $this->{$field};
     }
 
     public static function getList($page = 1, $listSize = 12)
@@ -46,7 +53,7 @@ class Book
         $db->query("SELECT * FROM books WHERE id = :id");
         $db->bind(":id", $id);
         $result = $db->single();
-        $book = new Book($result->id, $result->title, $result->author, $result->description, $result->category, $result->linkToBuy);
+        $book = new Book($result->id, $result->title, $result->author, $result->description, $result->category, $result->linkToBuy, $result->image);
         return $book;
     }
 }
