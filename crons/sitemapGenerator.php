@@ -14,7 +14,7 @@ for ($i = 0; $i < $iterations; $i++) {
     $books = Book::getList($i + 1, BOOKS_PER_ITERATION);
     foreach ($books as $book) {
         fwrite($file, '<url>');
-        fwrite($file, '<loc>https://psicologiaconfer/libro/' . UrlGenerator::createUrlCanonical($book->title) . '-' . $book->id . '</loc>');
+        fwrite($file, '<loc>https://psicologiaconfer.com/libro/' . UrlGenerator::createUrlCanonical($book->title) . '-' . $book->id . '</loc>');
         fwrite($file, '<lastmod>' . $book->lastModification . '</lastmod>');
         fwrite($file, '</url>');
     }
