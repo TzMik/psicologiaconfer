@@ -10,9 +10,10 @@ class Book
     private $category;
     private $linkToBuy;
     private $image;
+    private $lastModification;
     private $db;
 
-    public function __construct($id, $title, $author, $description, $category, $linkToBuy, $image) {
+    public function __construct($id, $title, $author, $description, $category, $linkToBuy, $image, $lastModification) {
         $this->id = $id;
         $this->title = $title;
         $this->author = $author;
@@ -20,18 +21,20 @@ class Book
         $this->category = $category;
         $this->linkToBuy = $linkToBuy;
         $this->image = $image;
+        $this->lastModification = $lastModification;
         $this->db = new Database;
     }
 
     public function save()
     {
-        $this->db->query("UPDATE books SET title = :title, author = :author, description = :description, category = :category, linkToBuy = :linkToBuy, image = :image WHERE id = :id");
+        $this->db->query("UPDATE books SET title = :title, author = :author, description = :description, category = :category, linkToBuy = :linkToBuy, image = :image, lastModification = :lastModification WHERE id = :id");
         $this->db->bind(":title", $this->title);
         $this->db->bind(":author", $this->author);
         $this->db->bind(":description", $this->description);
         $this->db->bind(":category", $this->category);
         $this->db->bind(":linkToBuy", $this->linkToBuy);
         $this->db->bind(":image", $this->image);
+        $this->db->bind(":lastModification", date('Y-m-d'));
         $this->db->bind(":id", $this->id);
     }
 
@@ -62,7 +65,15 @@ class Book
         $db->query("SELECT * FROM books WHERE id = :id");
         $db->bind(":id", $id);
         $result = $db->single();
-        $book = new Book($result->id, $result->title, $result->author, $result->description, $result->category, $result->linkToBuy, $result->image);
+        $book = new Book($result->id, $result->title, $result->author, $result->description, $result->category, $result->linkToBuy, $result->image, $result->lastModification);
         return $book;
+    }
+
+    public static function amount()
+    {
+        $db = new Database;
+        $db->query("SELECT COUNT(id) AS total FROM books");
+        $result =  $db->single();
+        return intval($result->total);
     }
 }
