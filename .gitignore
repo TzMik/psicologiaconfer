@@ -1,3 +1,4 @@
 config/*
 migrations/*
 sitemap.xml
+.idea

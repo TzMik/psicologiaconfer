@@ -29,20 +29,40 @@ require_once __DIR__ . "/../controllers/libros.php";
         <input type="hidden" id="page" name="page" value="1">
         <?php if (!empty($bookList)) : ?>
             <div class="row my-3" id="bookList">
-                <?php foreach ($bookList as $book) : ?>
-                    <div class="col-md-3 col-sm-12 my-2">
-                        <div class="card book-card">
-                            <img src="<?= $book->image ?>" onerror="this.src = 'https://kravmaganewcastle.com.au/wp-content/uploads/2017/04/default-image-620x600.jpg';return true;" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><?= $book->title ?></h5>
-                                <p class="card-text"><?= TextUtil::getFirstWords($book->description) ?></p>
-                                <div class="book-btn-div">
-                                    <a href="<?= ROOT_PATH ?>/libro/<?= UrlGenerator::createUrlCanonical($book->title) ?>-<?= $book->id ?>" class="btn btn-outline-primary">Ver libro</a>
+                <div class="col-md-8 col-sm-12">
+                    <div class="row">
+                        <?php foreach ($bookList as $book) : ?>
+                            <div class="col-md-4 col-sm-12 my-2">
+                                <div class="card book-card">
+                                    <img src="<?= $book->image ?>" onerror="this.src = 'https://kravmaganewcastle.com.au/wp-content/uploads/2017/04/default-image-620x600.jpg';return true;" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?= $book->title ?></h5>
+                                        <p class="card-text"><?= TextUtil::getFirstWords($book->description) ?></p>
+                                        <div class="book-btn-div">
+                                            <a href="<?= ROOT_PATH ?>/libro/<?= UrlGenerator::createUrlCanonical($book->title) ?>-<?= $book->id ?>" class="btn btn-outline-primary">Ver libro</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
-                <?php endforeach; ?>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            Categorías
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <?php if (!empty($categoryList)) : ?>
+                                <?php foreach ($categoryList as $category) : ?>
+                                    <li class="list-group-item"><a href="<?= ROOT_PATH ?>/libros/<?= UrlGenerator::createUrlCanonical($category->name) ?>-<?= $category->id ?>"><?= $category->name ?></a></li>
+                                <?php endforeach; ?>
+                            <?php else : ?>
+                                <li class="list-group-item">No hay categorías</li>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="d-flex justify-content-center w-100 my-3">
                 <button class="btn btn-lg btn-primary" id="loadMoreBtn">Cargar más</button>
