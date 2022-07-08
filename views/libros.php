@@ -51,7 +51,7 @@ require_once __DIR__ . "/../controllers/libros.php";
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <div class="card-header">
                             Categorías
                         </div>
