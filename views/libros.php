@@ -25,6 +25,9 @@ require_once __DIR__ . "/../controllers/libros.php";
                 </div>
             </div>
         </div>
+        <?php if (!empty($_GET['request'])) : ?>
+        <input type="hidden" name="categoryId" id="categoryId" value="<?= $categoryId ?>">
+        <?php endif; ?>
         <input type="hidden" id="listSize" name="listSize" value="<?= BOOKS_PER_PAGE ?>">
         <input type="hidden" id="page" name="page" value="1">
         <?php if (!empty($bookList)) : ?>

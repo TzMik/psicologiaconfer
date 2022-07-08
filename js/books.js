@@ -24,6 +24,9 @@ const loadMore = () => {
     let newPage = parseInt(page.value) + 1;
     formData.append('page', newPage);
     formData.append('listSize', listSize.value);
+    if (categoryId !== undefined) {
+        formData.append('categoryId', categoryId.value);
+    }
     fetch(root_path + "/actions/loadMoreBooks.php", {
         method: "post",
         body: formData
