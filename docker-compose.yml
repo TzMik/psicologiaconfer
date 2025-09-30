@@ -1,0 +1,18 @@
+services:
+  # Nuestro servicio se llamará 'web'
+  web:
+    # Construye la imagen a partir del Dockerfile en el directorio actual (.)
+    build: .
+    # Nombra el contenedor para identificarlo fácilmente
+    container_name: mvc_php_apache
+    # Mapeo de puertos: <puerto_host>:<puerto_contenedor>
+    # Accederemos a la aplicación en http://localhost:8080
+    ports:
+      - "8080:80"
+    # Montaje de volúmenes: <directorio_host>:<directorio_contenedor>
+    # Esto sincroniza tu código local con el del contenedor
+    volumes:
+      - .:/var/www/html
+    # Cambia la configuración de Apache para que apunte a nuestra carpeta /public
+    command: >
+      sh -c "echo 'DocumentRoot /var/www/html/public' >> /etc/apache2/apache2.conf && apache2-foreground"
