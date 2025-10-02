@@ -1,0 +1,13 @@
+{
+    "name": "tzmik/psicologiaconfer",
+    "description": "Landing page de la presentacion de los servicios de la psicologa Fernanda Quiroga",
+    "type": "project",
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fer\\": "app/"
+        }
+    }
+}

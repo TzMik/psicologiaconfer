@@ -1,15 +1,13 @@
 <?php
 namespace Fer\controllers;
 
-class HomeController extends Controller {
+class AboutController extends Controller {
 	public function index($name = '') {
 		// En un futuro, aquí podrías cargar un modelo para obtener datos
 		// $userModel = $this->model('User');
 		// $user = $userModel->find($name);
 
 		// Por ahora, simplemente llamamos a la vista
-		$this->view('home/index', ['name' => $name]);
+		$this->view('about/index', ['name' => $name]);
 	}
-
 }
-?>

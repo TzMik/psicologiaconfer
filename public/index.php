@@ -5,7 +5,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Carga el enrutador
-require_once '../app/router.php';
+require_once dirname(__DIR__, 1) . '/vendor/autoload.php';
+
+use Fer\Router;
 
 // Crea una instancia del enrutador
 $router = new Router();

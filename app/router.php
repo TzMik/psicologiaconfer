@@ -1,30 +1,51 @@
 <?php
+namespace Fer;
 
 class Router {
-	protected $controller = 'HomeController';
+	protected $controller = 'Home'; // Ahora solo el nombre base sin 'Controller'
 	protected $method = 'index';
 	protected $params = [];
+	// 1. Nueva propiedad para el namespace base de tus controladores
+	protected $namespace = 'Fer\\controllers\\'; 
 
 	public function __construct() {
-		// Este constructor está vacío por ahora, pero podría usarse para configuraciones iniciales.
+		// Este constructor está vacío por ahora.
 	}
 
 	public function run() {
 		$url = $this->parseUrl();
 
 		if (empty($url[0])) {
-			$url[0] = 'home';
+			$url[0] = 'Home'; // Usamos 'Home' por convención
 		}
 
-		// Busca el controlador en la carpeta /controllers
-		if (file_exists('../app/controllers/' . ucwords($url[0]) . 'Controller.php')) {
-			$this->controller = ucwords($url[0]) . 'Controller';
+		// Prepara el nombre del controlador (Ej: 'HomeController')
+		$controllerName = ucwords($url[0]) . 'Controller';
+		
+		// 2. Comprobación y Asignación del Controlador:
+		// Se usa class_exists para verificar si la clase *con* el namespace existe.
+		// Esto requiere que tengas configurado un autoloader (como el de Composer)
+		// que sepa dónde encontrar el archivo 'HomeController.php' para 'App\Controllers\HomeController'.
+		
+		$fullControllerName = $this->namespace . $controllerName;
+
+		if (class_exists($fullControllerName)) {
+			$this->controller = $fullControllerName;
 			unset($url[0]);
+		} else {
+            // Si el controlador por la URL no existe, se mantiene el default (HomeController)
+            // y se construye su nombre completo con el namespace.
+            $this->controller = $this->namespace . 'HomeController'; 
 		}
+        
+        // ******************************************************************************
+        // NOTA IMPORTANTE: Si estás usando un autoloader, la siguiente línea ya NO es necesaria:
+		// require_once '../app/controllers/' . $controllerName . '.php'; 
+        // Si no usas autoloader, tendrías que incluirlo manualmente, 
+        // pero se recomienda usar autoloader con namespaces.
+        // ******************************************************************************
 
-		require_once '../app/controllers/' . $this->controller . '.php';
-
-		// Crea una instancia del controlador
+		// Crea una instancia del controlador usando el nombre completo con el namespace
 		$this->controller = new $this->controller;
 
 		// Revisa si el método existe en el controlador
@@ -47,9 +68,9 @@ class Router {
 	 */
 	public function parseUrl() {
 		if (isset($_GET['url'])) {
+			// Sanitiza y divide la URL, limpiando cualquier barra final.
 			return explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));
 		}
 		return [];
 	}
 }
-?>

@@ -24,10 +24,10 @@
                 <p><b>Modalidad de atención:</b> Presencial y en línea</p>
                 <div class="d-flex flex-column gap-2">
                     <div>
-                        <a class="btn btn-primary btn-lg" href="#">Agendar</a>
+                        <a class="btn btn-primary btn-lg" href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ0m59nT_6Z6uUJ1xRXpUYzQwvZeNI-n9EYRny4=" target="_blank">Agendar</a>
                     </div>
                     <div>
-                        <a class="btn btn-outline-primary btn-lg" href="#">Más información</a>
+                        <a class="btn btn-outline-primary btn-lg" href="/about">Más información</a>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                                 El proceso te ayudará a fortalecer tu bienestar emocional, tomar decisiones más conscientes y reconectarte con tu autenticidad.
                             </p>
                         </div>
-                        <a href="#" class="btn btn-outline-primary">Agendar</a>
+                        <a href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ0m59nT_6Z6uUJ1xRXpUYzQwvZeNI-n9EYRny4=" target="_blank" class="btn btn-outline-primary">Agendar</a>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
                                 Desde un enfoque sistémico y empático, trabajamos en identificar patrones, aprender a escuchar y construir una relación más sana, equitativa y respetuosa.
                             </p>
                         </div>
-                        <a href="#" class="btn btn-outline-primary">Agendar</a>
+                        <a href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ0m59nT_6Z6uUJ1xRXpUYzQwvZeNI-n9EYRny4=" target="_blank" class="btn btn-outline-primary">Agendar</a>
                     </div>
                 </div>
             </div>
@@ -159,7 +159,7 @@
                     En nuestras sesiones construiremos un espacio donde puedas explorar tu historia, comprender tus emociones y aprender nuevas formas de relacionarte contigo y con los demás.</p>
                 <p>Trabajo desde un enfoque sistémico y cognitivo-conductual, integrando técnicas que se adaptan a tus necesidades.</p>
                 <p>Ya sea que estés atravesando una crisis, buscando sanar una relación, o simplemente quieras conocerte más, la terapia puede ser el comienzo de una transformación profunda y consciente.</p>
-                <a href="#" class="btn btn-primary">Agenda tu primera cita</a>
+                <a href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ0m59nT_6Z6uUJ1xRXpUYzQwvZeNI-n9EYRny4=" target="_blank" class="btn btn-primary">Agenda tu primera cita</a>
             </div>
         </div>
     </section>

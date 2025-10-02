@@ -9,6 +9,9 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/">Inicio</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/about">Acerca de mí</a>
+                </li>
             </ul>
         </div>
     </div>

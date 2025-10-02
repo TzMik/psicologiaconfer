@@ -21,7 +21,7 @@
             <p>
                 <small>Atención presencial y en línea</small>
                 <br>
-                <small>Av. Topacio 2755, Bosques de la Victoria,<br> Guadalajara (Jalisco)</small>
+                <small><a href="https://maps.app.goo.gl/MmJcXztKJ6np4cM46" target="_blank">Av. Topacio 2755, Bosques de la Victoria,<br> Guadalajara (Jalisco)</a></small>
             </p>
         </div>
         <div class="col-md-4">
@@ -37,5 +37,6 @@
             </p>
         </div>
     </div>
+    <hr>
     <p class="text-center">Copyright © <?= date('Y') ?>. Fernanda Quiroga. Todos los derechos reservados.</p>
 </footer>
