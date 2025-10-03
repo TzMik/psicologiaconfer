@@ -45,7 +45,7 @@
         <section>
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center flex-column gap-3">
-                    <img src="https://newprofilepic.photo-cdn.net//assets/images/article/profile.jpg?90af0c8" alt="Fernanda Quiroga" class="rounded-circle" width="100" height="105">
+                    <img src="/img/acerca-de-min.webp" alt="Fernanda Quiroga" class="rounded-circle" width="100" height="100">
                     <h3 class="pink-subheader h5">Hola, soy Fer</h3>
                 </div>
                 <h2 class="text-center text-primary h1 mb-5">Mi enfoque es acompañar a las personas en sus procesos de autoconocimiento, transformación y bienestar emocional, ayudándolas a construir relaciones más sanas consigo mismas y con los demás.</h2>
@@ -161,7 +161,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="d-none d-md-flex justify-content-center col-md-6">
-                        <img src="/img/psicologia.webp" class="rounded w-75 h-auto" alt="Manos entrelazadas" width="600" height="560">
+                        <img src="/img/fer-tomando-cafe.webp" class="rounded img-fluid" alt="Manos entrelazadas" width="437" height="437">
                     </div>
                     <div class="col-md-5">
                         <h2 class="text-primary">Cómo podemos trabajar juntxs</h2>

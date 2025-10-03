@@ -10,7 +10,7 @@
         <section class="bg-secondary mt-4">
             <div class="container">
                 <div class="row h-100 p-3 d-flex justify-content-center align-items-center">
-                    <div class="col-md-6 py-3">
+                    <div class="col-md-6 py-3 mb-4 mb-md-0">
                         <h1 class="text-primary main-header">Psic. Fernanda Quiroga</h1>
                         <p>No creo en recetas universales ni en procesos rígidos. Cada historia es única, y por eso adapto cada proceso terapéutico a las necesidades, ritmos y objetivos personales de quien acompaño.</p>
                         <p>Trabajo desde una perspectiva que combina profundidad emocional, psicoeducación y estrategias prácticas, para que la terapia sea un espacio real de transformación, alivio y crecimiento.</p>
@@ -20,10 +20,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="position-relative">
-                            <img class="main-img" src="https://media.istockphoto.com/id/154232673/photo/blue-ridge-parkway-scenic-landscape-appalachian-mountains-ridges-sunset-layers.jpg?s=612x612&w=0&k=20&c=m2LZsnuJl6Un7oW4pHBH7s6Yr9-yB6pLkZ-8_vTj2M0=" alt="Fernanda Quiroga" width="440" height="612">
-                            <div class="decorative-circle rounded-circle"></div>
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="position-relative d-flex align-items-center justify-content-end w-100">
+                            <img class="main-img img-fluid" src="/img/acerca-de-lg.webp" alt="Fernanda Quiroga" width="500" height="889">
+                            <div class="decorative-circle-2 rounded-circle"></div>
                         </div>
                     </div>
                 </div>

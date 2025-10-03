@@ -72,6 +72,14 @@ a {
     top: 8px;
     left: 15px;
 }
+.decorative-circle-2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: var(--pink-color);
+    top: 8px;
+    right: 15px;
+}
 .pink-subheader {
     color: var(--pink-color);
     font-weight: bold;
@@ -113,10 +121,14 @@ footer {
     .decorative-circle {
         width: 90px;
         height: 90px;
-        position: absolute;
-        background-color: var(--pink-color);
         top: 16px;
         left: -3px;
+    }
+    .decorative-circle-2 {
+        width: 90px;
+        height: 90px;
+        top: 16px;
+        right: -3px;
     }
 }
 
@@ -124,11 +136,17 @@ footer {
     .decorative-circle {
         left: -8px;
     }
+    .decorative-circle-2 {
+        right: -8px;
+    }
 }
 
 @media (min-width: 1200px) {
     .decorative-circle {
         left: 30px;
+    }
+    .decorative-circle-2 {
+        right: 30px;
     }
 }
 
@@ -136,9 +154,13 @@ footer {
     .decorative-circle {
         width: 120px;
         height: 120px;
-        position: absolute;
-        background-color: var(--pink-color);
         top: 16px;
         left: 20px;
+    }
+    .decorative-circle-2 {
+        width: 120px;
+        height: 120px;
+        top: 16px;
+        right: 20px;
     }
 }
