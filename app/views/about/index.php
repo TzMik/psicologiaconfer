@@ -7,10 +7,10 @@
 
     <body>
         <?php require_once __DIR__ . '/../components/navbar.php'; ?>
-        <section class="bg-secondary mt-4">
+        <section class="bg-secondary mt-4 pb-0 pb-md-5">
             <div class="container">
                 <div class="row h-100 p-3 d-flex justify-content-center align-items-center">
-                    <div class="col-md-6 py-3 mb-4 mb-md-0">
+                    <div class="col-md-6 py-3 mb-4 mb-md-0 text-center text-md-start">
                         <h1 class="text-primary main-header">Psic. Fernanda Quiroga</h1>
                         <p>No creo en recetas universales ni en procesos rígidos. Cada historia es única, y por eso adapto cada proceso terapéutico a las necesidades, ritmos y objetivos personales de quien acompaño.</p>
                         <p>Trabajo desde una perspectiva que combina profundidad emocional, psicoeducación y estrategias prácticas, para que la terapia sea un espacio real de transformación, alivio y crecimiento.</p>
@@ -29,15 +29,15 @@
                 </div>
             </div>
         </section>
-        <section class="bg-secondary">
+        <section class="bg-secondary pt-0">
             <div class="container">
                 <div class="row">
                     <div class="d-none d-md-flex col-md-4 justify-content-center align-items-center">
                         <div>
-                            <img src="/img/cloudy-brain.webp" alt="Cabeza despejada representado con nubes" class="rounded w-100" width="340" height="340">
+                            <img src="/img/cloudy-brain.webp" alt="Cabeza despejada representado con nubes" class="rounded img-fluid" width="340" height="340">
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 text-center text-md-start">
                         <h2 class="h1 text-primary">Acerca de mí</h2>
                         <p>
                             Soy <b>Fernanda Quiroga</b>, psicóloga con más de ocho años de experiencia en práctica clínica, especializada en el <b>acompañamiento de mujeres y personas de la comunidad LGBT+</b>, así como en el <b>tratamiento de las secuelas emocionales de la violencia y el trauma</b>.
@@ -72,7 +72,7 @@
         <section class="bg-secondary">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 align-items-center">
+                    <div class="col-md-4 d-flex align-items-center text-center text-md-start">
                         <h2 class="text-primary">Formación y especialización</h2>
                     </div>
                     <div class="col-md-8">

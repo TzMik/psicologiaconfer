@@ -12,7 +12,7 @@
                 <h1 class="text-center display-1 text-primary">Inicia tu Proceso de Sanación y Reconstrucción</h1>
                 <h2 class="text-center">Servicios</h2>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3 mb-md-0">
                         <div class="card bg-secondary">
                             <div class="card-body">
                                 <h2 class="text-primary mb-3">🧘‍♀️ Terapia individual</h2>
@@ -64,8 +64,8 @@
         <section class="bg-secondary">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-5">
-                        <h2 class="display-3 text-primary mb-3">No tienes que ser perfectx solo ser...</h2>
+                    <div class="col-md-5 mb-5 mb-md-0">
+                        <h2 class="display-3 text-center text-md-start text-primary mb-3">No tienes que ser perfectx solo SER</h2>
                         <div class="mt-5">
                             <a href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ0m59nT_6Z6uUJ1xRXpUYzQwvZeNI-n9EYRny4=" target="_blank" class="btn btn-primary btn-lg">Contáctame y empecemos tu proceso</a>
                         </div>

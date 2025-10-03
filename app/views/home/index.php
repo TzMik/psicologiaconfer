@@ -90,7 +90,7 @@
         <section class="bg-primary text-light">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <h2 class="display-1">Es hora de ser tu...</h2>
                         <p>
                             recuperar tu poder personal, soltar lo que ya no te sirve y reconectar con tu bienestar emocional.
@@ -118,7 +118,7 @@
         <section class="container">
             <h2 class="text-center text-primary display-2">Servicios</h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3 mb-md-0">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title">
