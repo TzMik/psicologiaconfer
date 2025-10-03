@@ -2,7 +2,7 @@
 :root {
     --primary-color: #164e4e;
     --secondary-color: #efede8;
-    --secondary2-color: #dbd9d4;
+    --secondary2-color: #d6d2c6;
     --pink-color: #f2a094;
 }
 .bg-secondary {
@@ -81,10 +81,6 @@ section {
     padding: 60px 0;
 }
 
-section.container-fluid {
-    padding: 60px 30px;
-}
-
 .brain-img {
     background-image: url('/img/brain-illustration.webp');
     background-size: contain;
@@ -95,10 +91,18 @@ section.container-fluid {
 .card {
     border: 1px solid var(--pink-color);
 }
-footer.container-fluid {
-    padding: 4rem 2.5rem 1rem 2.5rem;
-    background-color: var(--secondary-color);
-}
 nav {
     background-color: var(--secondary2-color);
+}
+footer {
+    background-color: var(--secondary2-color);
+}
+.accordion-header .accordion-button {
+    font-size: 1.5rem;
+    background-color: var(--secondary2-color);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: white;
 }
