@@ -12,7 +12,7 @@
                 <div class="row h-100 p-3 d-flex justify-content-center align-items-center">
                     <div class="col-md-6 d-flex justify-content-center align-items-center">
                         <div class="position-relative">
-                            <img class="main-img" src="https://media.istockphoto.com/id/154232673/photo/blue-ridge-parkway-scenic-landscape-appalachian-mountains-ridges-sunset-layers.jpg?s=612x612&w=0&k=20&c=m2LZsnuJl6Un7oW4pHBH7s6Yr9-yB6pLkZ-8_vTj2M0=" alt="Fernanda Quiroga">
+                            <img class="main-img" src="https://media.istockphoto.com/id/154232673/photo/blue-ridge-parkway-scenic-landscape-appalachian-mountains-ridges-sunset-layers.jpg?s=612x612&w=0&k=20&c=m2LZsnuJl6Un7oW4pHBH7s6Yr9-yB6pLkZ-8_vTj2M0=" alt="Fernanda Quiroga" width="440" height="612">
                             <div class="decorative-circle rounded-circle"></div>
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                                 <a class="btn btn-primary btn-lg" href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ0m59nT_6Z6uUJ1xRXpUYzQwvZeNI-n9EYRny4=" target="_blank">Agendar</a>
                             </div>
                             <div>
-                                <a class="btn btn-outline-primary btn-lg" href="/about">Más información</a>
+                                <a class="btn btn-outline-primary btn-lg" href="/about">Más sobre mí</a>
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
         <section>
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center flex-column gap-3">
-                    <img src="https://newprofilepic.photo-cdn.net//assets/images/article/profile.jpg?90af0c8" alt="Fernanda Quiroga" class="rounded-circle" width="100" height="100">
+                    <img src="https://newprofilepic.photo-cdn.net//assets/images/article/profile.jpg?90af0c8" alt="Fernanda Quiroga" class="rounded-circle" width="100" height="105">
                     <h3 class="pink-subheader h5">Hola, soy Fer</h3>
                 </div>
                 <h2 class="text-center text-primary h1 mb-5">Mi enfoque es acompañar a las personas en sus procesos de autoconocimiento, transformación y bienestar emocional, ayudándolas a construir relaciones más sanas consigo mismas y con los demás.</h2>
@@ -161,7 +161,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="d-none d-md-flex justify-content-center col-md-6">
-                        <img src="/img/psicologia.webp" class="rounded" alt="Manos entrelazadas" height="400">
+                        <img src="/img/psicologia.webp" class="rounded w-75 h-auto" alt="Manos entrelazadas" width="600" height="560">
                     </div>
                     <div class="col-md-5">
                         <h2 class="text-primary">Cómo podemos trabajar juntxs</h2>

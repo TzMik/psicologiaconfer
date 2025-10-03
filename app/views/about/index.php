@@ -22,7 +22,7 @@
                     </div>
                     <div class="col-md-6 d-flex justify-content-center align-items-center">
                         <div class="position-relative">
-                            <img class="main-img" src="https://media.istockphoto.com/id/154232673/photo/blue-ridge-parkway-scenic-landscape-appalachian-mountains-ridges-sunset-layers.jpg?s=612x612&w=0&k=20&c=m2LZsnuJl6Un7oW4pHBH7s6Yr9-yB6pLkZ-8_vTj2M0=" alt="Fernanda Quiroga">
+                            <img class="main-img" src="https://media.istockphoto.com/id/154232673/photo/blue-ridge-parkway-scenic-landscape-appalachian-mountains-ridges-sunset-layers.jpg?s=612x612&w=0&k=20&c=m2LZsnuJl6Un7oW4pHBH7s6Yr9-yB6pLkZ-8_vTj2M0=" alt="Fernanda Quiroga" width="440" height="612">
                             <div class="decorative-circle rounded-circle"></div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="d-none d-md-flex col-md-4 justify-content-center align-items-center">
                         <div>
-                            <img src="/img/cloudy-brain.webp" alt="Cabeza despejada representado con nubes" class="rounded w-100">
+                            <img src="/img/cloudy-brain.webp" alt="Cabeza despejada representado con nubes" class="rounded w-100" width="340" height="340">
                         </div>
                     </div>
                     <div class="col-md-8">

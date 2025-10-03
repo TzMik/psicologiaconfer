@@ -9,7 +9,8 @@
         <?php require_once __DIR__ . '/../components/navbar.php'; ?>
         <section class="bg-secondary mt-4">
             <div class="container">
-                <h1 class="text-center display-1 text-primary">Servicios</h1>
+                <h1 class="text-center display-1 text-primary">Inicia tu Proceso de Sanación y Reconstrucción</h1>
+                <h2 class="text-center">Servicios</h2>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card bg-secondary">

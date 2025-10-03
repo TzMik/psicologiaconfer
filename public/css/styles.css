@@ -3,7 +3,10 @@
     --primary-color: #164e4e;
     --secondary-color: #efede8;
     --secondary2-color: #d6d2c6;
-    --pink-color: #f2a094;
+    --pink-color: #A42C19;
+}
+a {
+    color: var(--pink-color);
 }
 .bg-secondary {
     background-color: var(--secondary-color) !important;
@@ -61,6 +64,7 @@
 .main-img {
     border-radius: 500px;
     max-height: 410px;
+    width: auto;
 }
 .decorative-circle {
     width: 90px;
