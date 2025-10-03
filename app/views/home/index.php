@@ -10,13 +10,13 @@
         <section class="bg-secondary mt-4">
             <div class="container">
                 <div class="row h-100 p-3 d-flex justify-content-center align-items-center">
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="position-relative">
-                            <img class="main-img" src="https://media.istockphoto.com/id/154232673/photo/blue-ridge-parkway-scenic-landscape-appalachian-mountains-ridges-sunset-layers.jpg?s=612x612&w=0&k=20&c=m2LZsnuJl6Un7oW4pHBH7s6Yr9-yB6pLkZ-8_vTj2M0=" alt="Fernanda Quiroga" width="440" height="612">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="position-relative d-flex align-items-center w-100">
+                            <img class="main-img img-fluid" src="/img/fer-principal.webp" alt="Fernanda Quiroga" width="500" height="889">
                             <div class="decorative-circle rounded-circle"></div>
                         </div>
                     </div>
-                    <div class="col-md-6 py-3">
+                    <div class="col-md-6 py-3 text-center text-md-start">
                         <h1 class="text-primary main-header">Psic. Fernanda Quiroga</h1>
                         <p>Especialista en Psicología Sistémica</p>
                         <p>Máster en Violencia de Género</p>

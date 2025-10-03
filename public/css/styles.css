@@ -63,16 +63,14 @@ a {
 /* IMAGES configuration */
 .main-img {
     border-radius: 500px;
-    max-height: 410px;
-    width: auto;
 }
 .decorative-circle {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     position: absolute;
     background-color: var(--pink-color);
     top: 8px;
-    left: -4px;
+    left: 15px;
 }
 .pink-subheader {
     color: var(--pink-color);
@@ -109,4 +107,38 @@ footer {
 .accordion-button:not(.collapsed) {
     background-color: var(--primary-color);
     color: white;
+}
+
+@media (min-width: 420px) {
+    .decorative-circle {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        background-color: var(--pink-color);
+        top: 16px;
+        left: -3px;
+    }
+}
+
+@media (min-width: 768px) {
+    .decorative-circle {
+        left: -8px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .decorative-circle {
+        left: 30px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .decorative-circle {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        background-color: var(--pink-color);
+        top: 16px;
+        left: 20px;
+    }
 }
