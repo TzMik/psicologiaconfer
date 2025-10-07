@@ -27,3 +27,12 @@ $canonical_url = $protocol . $host . $request_uri;
 <link rel="stylesheet" href="/css/styles.css?v=<?= time() ?>">
 <meta name="description" content="Terapia Sistémica y TCC para sanar, reconstruirte y empoderarte. Especialista en empoderamiento femenino y apoyo integral a la comunidad LGBT+. Agenda tu espacio seguro.">
 <link rel="canonical" href="<?= $canonical_url ?>">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C9KLPRG6D7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C9KLPRG6D7');
+</script>
